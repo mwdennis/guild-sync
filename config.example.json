@@ -1,0 +1,36 @@
+{
+  "guild": {
+    "name": "Your Guild Name",
+    "realmSlug": "",
+    "region": "us"
+  },
+
+  "blizzard": {
+    "profileNamespace": "profile-forever-us",
+    "locale": "en_US",
+    "onlyRealms": []
+  },
+
+  "discord": {
+    "serverId": "000000000000000000",
+    "memberRoleId": "000000000000000000",
+    "officerRoleIds": ["000000000000000000"],
+    "logChannelId": "",
+    "setNickname": true
+  },
+
+  "ranks": [
+    { "rank": 0, "name": "Guild Master", "roleId": "000000000000000000" },
+    { "rank": 1, "name": "Officer",      "roleId": "000000000000000000" },
+    { "rank": 2, "name": "Raider",       "roleId": "000000000000000000" },
+    { "rank": 3, "name": "Member",       "roleId": "000000000000000000" },
+    { "rank": 4, "name": "Initiate",     "roleId": "000000000000000000" }
+  ],
+
+  "rankRoleMode": "exact",
+
+  "sync": {
+    "intervalMinutes": 360,
+    "removeRolesWhenNotInGuild": true
+  }
+}

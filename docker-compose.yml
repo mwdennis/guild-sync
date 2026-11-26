@@ -1,0 +1,16 @@
+services:
+  guild-sync:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_PATH: /data/guild-sync.db
+      CONFIG_PATH: /config/config.json
+    volumes:
+      - ./config.json:/config/config.json:ro
+      - guild-sync-data:/data
+    ports:
+      - "3000:3000"   # put a reverse proxy with HTTPS (Caddy, nginx, Cloudflare Tunnel) in front of this
+
+volumes:
+  guild-sync-data:
